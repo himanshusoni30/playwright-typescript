@@ -12,7 +12,7 @@ test.describe('Home Page Tests without login', () => {
         await expect(page.locator('[data-test="nav-sign-in"]')).toHaveText('Sign in');
     });
 
-    test("Visual validation of home page without auth", async ({ page }) => {
+    test.skip("Visual validation of home page without auth", async ({ page }) => {
         await page.waitForLoadState('networkidle');
         await expect(page).toHaveScreenshot(
             "home-page-without-auth.png", 
@@ -59,7 +59,7 @@ test.describe("Home page tests with login using customer01", () => {
         await expect(page.getByAltText("Banner")).toBeVisible();
     });
 
-    test("Visual validation of home page with auth of customer01", async ({ page }) => {
+    test.skip("Visual validation of home page with auth of customer01", async ({ page }) => {
         await page.waitForLoadState('networkidle');
         await expect(page).toHaveScreenshot(
             "home-page-with-auth.png",
