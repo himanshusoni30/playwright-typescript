@@ -9,6 +9,7 @@ This project was initiated to practice the exercises from the LinkedIn Learning 
 ├── README.md
 ├── package.json
 ├── .env
+├── .auth
 ├── .github
 │   └── workflows
 |       └── playwright.yml
